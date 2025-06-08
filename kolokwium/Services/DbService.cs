@@ -31,7 +31,12 @@ public class DbService : IDbService
                     {
                         SerialNumber = e.AvailableProgram.WashingMachine.SerialNumber,
                         MaxWeight = e.AvailableProgram.WashingMachine.MaxWeight
-                    }
+                    },
+                    // Program = new ProgramInfoDto()
+                    // {
+                    //    Name = e.AvailableProgram.Program.Name,
+                    //    Duration = e.AvailableProgram.Program.DurationMinutes
+                    //}
                         
                     
                 }).ToList()
